@@ -1,0 +1,22 @@
+mutation CreateChannel(
+  $teamId: Int!
+  $name: String!
+  $public: Boolean!
+  $members: [Int!]!
+) {
+  createChannel(
+    teamId: $teamId
+    name: $name
+    public: $public
+    members: $members
+  ) {
+    channel {
+      id
+      name
+      public
+    }
+    errors {
+      ...FragmentError
+    }
+  }
+}

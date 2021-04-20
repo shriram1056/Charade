@@ -1,0 +1,15 @@
+query DirectMessage($receiverId: Int!, $teamId: Int!, $cursor: String) {
+  DirectMessages(receiverId: $receiverId, teamId: $teamId, cursor: $cursor) {
+    hasMore
+    Messages {
+      id
+      text
+      sender {
+        username
+      }
+      createdAt
+      url
+      fileType
+    }
+  }
+}

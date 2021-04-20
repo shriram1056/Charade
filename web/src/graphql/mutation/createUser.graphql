@@ -1,0 +1,5 @@
+mutation createUser($options: UserCredentials!) {
+  createUser(options: $options) {
+    ...FragmentUserResponse
+  }
+}

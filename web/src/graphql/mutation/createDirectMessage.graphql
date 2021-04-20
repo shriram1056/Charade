@@ -1,0 +1,13 @@
+mutation CreateDirectMessage(
+  $text: String
+  $receiverId: Int!
+  $teamId: Int!
+  $file: Upload
+) {
+  createDirectMessages(
+    text: $text
+    receiverId: $receiverId
+    teamId: $teamId
+    file: $file
+  )
+}

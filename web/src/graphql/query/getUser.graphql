@@ -1,0 +1,21 @@
+query getUser {
+  getUser {
+    id
+    username
+    team {
+      id
+      name
+      admin
+      directMessageUsers {
+        id
+        username
+      }
+      channels {
+        id
+        name
+        public
+      }
+    }
+  }
+}
+# run 2 query simulatneously

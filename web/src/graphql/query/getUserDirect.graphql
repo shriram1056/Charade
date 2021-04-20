@@ -1,0 +1,23 @@
+query getUserDirect($id: Int!) {
+  User(id: $id) {
+    username
+  }
+  getUser {
+    id
+    username
+    team {
+      id
+      name
+      admin
+      directMessageUsers {
+        id
+        username
+      }
+      channels {
+        id
+        name
+        public
+      }
+    }
+  }
+}

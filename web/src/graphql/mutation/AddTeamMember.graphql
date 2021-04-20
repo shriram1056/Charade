@@ -1,0 +1,8 @@
+mutation AddTeamMember($teamId: Int!, $email: String!) {
+  addTeamMember(teamId: $teamId, email: $email) {
+    errors {
+      field
+      message
+    }
+  }
+}

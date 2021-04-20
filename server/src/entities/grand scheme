@@ -1,0 +1,6 @@
+User: one to many with Team and Channel
+message: many to one with user and Channel
+Team: one to many with channel and TeamMember,   many to one with User
+channel: one to many ChannelMember and Message, many to one with Team
+
+

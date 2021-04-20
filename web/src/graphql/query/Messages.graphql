@@ -1,0 +1,15 @@
+query Messages($channelId: Int!, $cursor: String) {
+  Messages(channelId: $channelId, cursor: $cursor) {
+    hasMore
+    Messages {
+      id
+      text
+      user {
+        username
+      }
+      createdAt
+      url
+      fileType
+    }
+  }
+}

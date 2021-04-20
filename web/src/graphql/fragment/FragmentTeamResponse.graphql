@@ -1,0 +1,8 @@
+fragment FragmentTeamResponse on TeamResponse {
+  errors {
+    ...FragmentError
+  }
+  team {
+    ...FragmentTeam
+  }
+}

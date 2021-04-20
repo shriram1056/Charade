@@ -1,0 +1,8 @@
+mutation createMessage($channelId: Int!, $text: String, $file: Upload) {
+  createMessage(channelId: $channelId, text: $text, file: $file) {
+    id
+    text
+    url
+    fileType
+  }
+}

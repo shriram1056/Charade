@@ -1,0 +1,10 @@
+subscription NewChannelMessage($channelId: Int!) {
+  newChannelMessage(channelId: $channelId) {
+    id
+    text
+    user {
+      username
+    }
+    createdAt
+  }
+}

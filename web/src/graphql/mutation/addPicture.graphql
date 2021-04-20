@@ -1,0 +1,3 @@
+mutation addPicture($picture: Upload!, $channelId: Int!) {
+  addPicture(picture: $picture, channelId: $channelId)
+}

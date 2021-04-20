@@ -1,0 +1,36 @@
+const createClient = (
+  ctx?: NextPageContext // ctx for forwarding cookie in ssr
+) => {
+  const httpLink = new HttpLink({
+    uri: 'http://localhost:4001/graphql',
+    credentials: 'include', //Apollo Client can include user credentials (basic auth, cookies, etc.) in the HTTP requests it makes to a GraphQL server. By default, credentials are included only if the server is hosted at the same origin as the application using Apollo Client.also, set credentials to true in cors package in express
+    headers: {
+      cookie:
+        (typeof window === 'undefined'
+          ? ctx?.req?.headers.cookie
+          : undefined) || '',
+    },
+  })
+
+  //WebSocket is a property that exists only in the browser
+
+  const splitLink =
+    typeof window !== 'undefined'
+      ? split(
+          ({ query }) => {
+            const definition = getMainDefinition(query)
+            return (
+              definition.kind === 'OperationDefinition' &&
+              definition.operation === 'subscription'
+            )
+          },
+          wsLink,
+          httpLink
+        )
+      : httpLink // this should be http link becuase in server, we use http and in client we use both http and sockets
+
+  return
+}
+export const withApollo = createWithApollo(createClient)
+
+//createWithApollo takes a ApolloClient<NormalizedCacheObject> | ((ctx?: NextPageContext) => ApolloClient<NormalizedCacheObject>); your createClient is of type (ctx: NextPageContext) => ApolloClient<NormalizedCacheObject>

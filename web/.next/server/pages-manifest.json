@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/view-team/[[...id]]": "pages/view-team/[[...id]].js",
+  "/view-team/user/[[...id]]": "pages/view-team/user/[[...id]].js"
+}
