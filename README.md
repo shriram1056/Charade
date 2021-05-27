@@ -5,4 +5,6 @@ admin of the team can also make the channels private, if needed. <br />
 team members can dm each other. <br />
 user session are managed with jwt tokens <br />
 real-time messaging feature is implemented with graphql-subscription </br>
-user can also send audio, files and other data.
+user can also send audio, files and other data. </br>
+
+see the project: https://www.youtube.com/watch?v=BEIEE_k2gu8
