@@ -1,7 +1,7 @@
 # slack-clone
 slack clone made with nextjs,chakra-ui,graphql and express <br />
 
-features:
+features: <br />
 users can create team, only the admin of the team have access to create channel and add new users to the team. <br />
 admin of the team can also make the channels private, if needed. <br />
 team members can dm each other. <br />
