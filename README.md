@@ -1,5 +1,5 @@
-# slack-clone
-slack clone made with nextjs,chakra-ui,graphql and express <br />
+# charade
+charade made with nextjs,chakra-ui,graphql and express <br />
 
 features: <br />
 users can create team, only the admin of the team have access to create channel and add new users to the team. <br />
