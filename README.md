@@ -12,12 +12,13 @@ made with chakra-ui, express, graphQL and next-js
 > * Dependency injection
 > * postgreSQL pgdmin and command line
 > * typeORM (DBContext, Migration)
-> * GraphQL (query, mutation, schemas and fragments)
-> * file upload
-> * websockets
-> * complex database design 
+> * GraphQL (query, mutation, subscriptions and fragments)
+> * file upload and websockets
+> * HTTP (GET, POST, PUT, PATCH, DELETE, status codes)
+> * complex database design (multiple foreign-key relation) 
+> * syncing data base model with schema
 > * dataloader
-> * component-based library (chakra-UI)  
+> * styled-component library (chakra-UI)  
 
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
 
