@@ -1,8 +1,10 @@
 # charade
+
 I made this project to learn:<br />
 ```bash
-   - dsfsdf
+* Building graphQL API
 ```
+_Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
 
 ## features: <br />
 users can create team, only the admin of the team have access to create channel and add new users to the team. <br />
