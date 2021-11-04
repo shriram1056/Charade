@@ -1,7 +1,7 @@
 # charade
 
 I made this project to learn:<br />
-> fsdfsdf
+> * fsdfsdf
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
 
 ## features: <br />
