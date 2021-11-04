@@ -1,9 +1,7 @@
 # charade
 I made this project to learn:<br />
 ```bash
--
--
--
+   - dsfsdf
 ```
 
 ## features: <br />
