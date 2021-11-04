@@ -1,5 +1,10 @@
 # charade
-charade made with nextjs,chakra-ui,graphql and express <br />
+I made this project to learn:<br />
+```bash
+-
+-
+-
+```
 
 ## features: <br />
 users can create team, only the admin of the team have access to create channel and add new users to the team. <br />
