@@ -13,9 +13,9 @@
 > * GraphQL (query, mutation, schemas and fragments)
 > * file upload
 > * websockets
-> * complex database design(more than 5 tables) 
+> * complex database design (more than 5 tables) 
 > * dataloader
-> * component-based library  
+> * component-based library (chakra-UI)  
 
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
 
