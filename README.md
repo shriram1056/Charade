@@ -4,7 +4,13 @@
 > * Building a GraphQL API
 > * Apollo
 > * MVC Architectural Pattern
-> * typescript
+> * SQL
+
+#### More specifically, I used the following:
+> * Dependency injection
+> * postgreSQL pgdmin and command line
+> * typeORM (DBContext, Migration)
+> * data
 
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
 
