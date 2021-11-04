@@ -12,7 +12,7 @@ made with chakra-ui, express, graphQL and next-js
 > * Dependency injection
 > * postgreSQL pgdmin and command line
 > * typeORM (DBContext, Migration)
-> * GraphQL (query, mutation, subscriptions and fragments)
+> * GraphQL (query, mutation and fragments)
 > * file upload and websockets
 > * HTTP (GET, POST, PUT, PATCH, DELETE, status codes)
 > * complex database design (multiple foreign-key relation) 
