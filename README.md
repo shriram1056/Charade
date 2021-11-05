@@ -18,6 +18,7 @@ made with chakra-ui, express, graphQL and next-js
 > * complex database design (multiple foreign-key relation) 
 > * styled-component library (chakra-UI)  
 > * jsx, props, hooks, conditional rendering and custom hooks
+> * JWT tokens
 
 
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
