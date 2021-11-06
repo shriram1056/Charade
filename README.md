@@ -5,8 +5,8 @@ made with chakra-ui, express, graphQL and next-js
 ### The purpose of this project is to learn and practice concepts related to:<br />
 > * Building a GraphQL API
 > * Apollo
-> * MVC Architectural Pattern
 > * SQL
+> * SDL and typescript
 
 #### More specifically, I used the following:
 > * Dependency injection
@@ -18,7 +18,7 @@ made with chakra-ui, express, graphQL and next-js
 > * complex database design (multiple foreign-key relation) 
 > * styled-component library (chakra-UI)  
 > * jsx, props, hooks, conditional rendering and custom hooks
-> * JWT tokens
+> * session-management(JWT tokens)
 
 
 _Note: Please excuse the large amount of comments in my code, they are used as notes for later review._
