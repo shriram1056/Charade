@@ -152,9 +152,9 @@ export class UserResolver {
       }
     }
     const { accessToken, refreshToken } = await createTokens(user)
-    // cookie setting on browser
     res.cookie('refresh-token', refreshToken)
     res.cookie('access-token', accessToken)
+    // cookie setting on browser
 
     return {
       user,

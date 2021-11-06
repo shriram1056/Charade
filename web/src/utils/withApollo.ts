@@ -63,7 +63,7 @@ const createClient = (
           wsLink,
           httpLink
         )
-      : httpLink // this should be http link becuase in next-server, we use http and in client we use both http and sockets
+      : httpLink // this should be http link becuase in server, we use http and in client we use both http and sockets
 
   return new ApolloClient({
     link: splitLink, //link option, it takes precedence over the uri option (uri sets up a default HTTP link chain using the provided URL).
