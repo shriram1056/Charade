@@ -1,4 +1,10 @@
 {
+  "../../node_modules/next-apollo/dist/index.es.js -> @apollo/client/react/ssr": {
+    "id": "./node_modules/@apollo/client/react/ssr/index.js",
+    "files": [
+      "static/chunks/vendors-node_modules_apollo_client_react_ssr_index_js.js"
+    ]
+  },
   "../../node_modules/next/dist/client/next-dev.js -> ./dev/noop": {
     "id": "./node_modules/next/dist/client/dev/noop.js",
     "files": [
