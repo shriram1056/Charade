@@ -119,7 +119,7 @@ const main = async () => {
   const server = new ApolloServer({
     uploads: false, // do this for using uploads in node above 14
     subscriptions: {
-      path: '/subscriptions',
+      path: '/subscriptions', // path for listening for subscription requests
 
       onConnect: async (connectionParams: any) => {
         // we have lazy set to true, this helps us avoid connection

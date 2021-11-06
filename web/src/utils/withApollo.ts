@@ -2,12 +2,15 @@ import { ApolloClient, InMemoryCache, split } from '@apollo/client'
 import { WebSocketLink } from '@apollo/client/link/ws'
 import { getMainDefinition } from '@apollo/client/utilities'
 import { createUploadLink } from 'apollo-upload-client'
+// this is for allowing UPLOADING to graphQL. so eliminate httplink object with this
 import cookieCutter from 'js-cookie'
 import { NextPageContext } from 'next'
 // this import is for forwarding the cookie
 import { withApollo as createWithApollo } from 'next-apollo'
 import { SubscriptionClient } from 'subscriptions-transport-ws'
 import { PaginatedMessages } from '../generated/graphql'
+
+//https://github.com/apollographql/subscriptions-transport-ws/issues/333 - for typeof window explaination
 
 // subscription connect as soon as i load the page.so, lazy true only reconnect it on subscription trigger
 //but we also reconnect on login
@@ -60,7 +63,7 @@ const createClient = (
           wsLink,
           httpLink
         )
-      : httpLink // this should be http link becuase in server, we use http and in client we use both http and sockets
+      : httpLink // this should be http link becuase in next-server, we use http and in client we use both http and sockets
 
   return new ApolloClient({
     link: splitLink, //link option, it takes precedence over the uri option (uri sets up a default HTTP link chain using the provided URL).

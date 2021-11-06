@@ -60,6 +60,7 @@ export const DirectMessage: React.FC<MessageProps> = ({
           ...prev,
           Messages: {
             ...prev.DirectMessages,
+            //DirectMessage has 'hasmore'
             Messages: [newDirectMessage, ...prev.DirectMessages.Messages],
           },
           //FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK!!!!!!!!!!!!!!!!!!!!!!!!!!!!1. DON'T FORGET TO CHANGE THE DirectMessages FIELD NAME ACCORDING TO YOUR NEEDS

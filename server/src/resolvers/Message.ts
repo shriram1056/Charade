@@ -169,6 +169,7 @@ export class MessageResolver {
         () => pubsub.asyncIterator(CHANNEL_MESSAGE),
         (payload, args) => payload.channelId === args.channelId
       )
+      // args is for subscription's argument
     ),
   })
   async newChannelMessage(
@@ -190,7 +191,7 @@ export class MessageResolver {
     //@ts-ignore
     @Arg('channelId', () => Int) channelId: number
   ): Promise<boolean> {
-    //DON'T FORGET TO ADD MIDDLEWARE IN INDEX.TS FOR FILE UPLOAD
+    //DON'T FORGET TO ADD MIDDLEWARE IN index.ts FOR FILE UPLOAD
     const { createReadStream, filename } = await file // DON'T FORGET TO AWAIT THE FILES
 
     console.log(filename)
