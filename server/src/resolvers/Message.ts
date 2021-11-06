@@ -183,32 +183,6 @@ export class MessageResolver {
     payload.createdAt = new Date(payload.createdAt) // date don't get formated in redis
     return payload
   }
-
-  @Mutation(() => Boolean)
-  async addPicture(
-    @Arg('picture', () => GraphQLUpload)
-    file: Upload,
-    //@ts-ignore
-    @Arg('channelId', () => Int) channelId: number
-  ): Promise<boolean> {
-    //DON'T FORGET TO ADD MIDDLEWARE IN index.ts FOR FILE UPLOAD
-    const { createReadStream, filename } = await file // DON'T FORGET TO AWAIT THE FILES
-
-    console.log(filename)
-    return new Promise((resolve) =>
-      createReadStream()
-        .pipe(createWriteStream(path.join(__dirname, `../images/${filename}`)))
-        // the path is '/home/shriram/Downloads/slack clone/server/dist/images'. in dist watch won 't create empty folder.so, create one manually
-        .on('finish', () => {
-          console.log('finish')
-          return resolve(true)
-        })
-        .on('error', (err) => {
-          console.log(err)
-          return resolve(false) // reject throws a error.
-        })
-    )
-  }
 }
 
 /*
