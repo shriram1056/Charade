@@ -14,8 +14,9 @@ made with chakra-ui, express, graphQL and next-js
 > * typeORM (DBContext, Migration)
 > * GraphQL (query, mutation,subscriptions and fragments)
 > * file upload and websockets
-> * HTTP (GET, POST, PUT, PATCH, DELETE, status codes)
-> * complex database design (multiple foreign-key relation) 
+> * complex database design (6 tables) 
+> * dataloader (n+1 problem)
+> * infinite scroll
 > * styled-component library (chakra-UI)  
 > * jsx, props, hooks, conditional rendering and custom hooks
 > * session-management(JWT tokens)
