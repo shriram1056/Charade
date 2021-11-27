@@ -9,7 +9,7 @@ made with chakra-ui, express, graphQL and next-js
 > * SDL and typescript
 
 #### More specifically, I used the following:
-> * postgreSQL pgdmin and command line
+> * postgreSQL pgdmin and psql
 > * typeORM (DBContext, Migration)
 > * GraphQL (query, mutation,subscriptions and fragments)
 > * file upload and websockets
